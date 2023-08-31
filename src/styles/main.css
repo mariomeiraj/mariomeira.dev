@@ -1,0 +1,13 @@
+.main-section {
+	max-width: 1440px;
+	background: #121212 url(../assets/images/background.png) no-repeat right top;
+	background-size: cover;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.main-title {
+	font-size: 3.2remgit;
+}

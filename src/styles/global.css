@@ -1,0 +1,48 @@
+@import url(./imports/styles.css);
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: white;
+}
+
+html {
+	scroll-snap-type: y mandatory;
+	overflow-x: hidden;
+}
+
+/* safari browser needs to be in the body */
+body {
+	scroll-snap-type: y mandatory;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	background-color: #212121;
+}
+
+.sections {
+	scroll-snap-align: center;
+	width: 100%;
+	max-width: 1440px;
+	height: 100vh;
+}
+
+.main-section {
+	background-color: #121212;
+}
+
+.about-section {
+	background-color: #404040;
+}
+
+.works-section {
+	background-color: gray;
+}
+
+.contact-section {
+	background-color: #505050;
+}
