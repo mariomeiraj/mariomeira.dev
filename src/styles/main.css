@@ -4,10 +4,63 @@
 	background-size: cover;
 
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
+	flex-direction: column;
+
+	padding: 16px;
+}
+
+.main-section img.logo {
+	height: 80px;
 }
 
 .main-title {
-	font-size: 3.2remgit;
+	width: 60%;
+	text-align: center;
+	font-size: 40px;
+	font-family: 'Montserrat';
+	font-weight: 200;
+
+	color: var(--negative-color);
+}
+
+.main-title strong {
+	font-weight: 700;
+}
+
+.main-section img.arrow {
+	width: 32px;
+	filter: invert(100%);
+
+	transition: 0.5s;
+}
+
+.main-section img.arrow:hover {
+	cursor: pointer;
+	scale: 1.2;
+
+	filter: invert(70%);
+}
+
+.typing-animation {
+	animation: blinkCursor 0.5s infinite normal, typing 0.5s infinite normal;
+}
+
+@keyframes typing {
+	from {
+		width: 0;
+	}
+	to {
+		width: 10rem;
+	}
+}
+
+@keyframes blinkCursor {
+	from {
+		color: #ffffff00;
+	}
+	to {
+		color: #ffffff;
+	}
 }

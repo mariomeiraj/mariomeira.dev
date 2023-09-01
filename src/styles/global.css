@@ -4,15 +4,19 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	color: white;
 }
 
-html {
+:root {
 	scroll-snap-type: y mandatory;
 	overflow-x: hidden;
+	scroll-behavior: smooth;
+
+	--main-color: #212121;
+	--second-color: #6e6e6e;
+	--third-color: #adadad;
+	--negative-color: #f9fefe;
 }
 
-/* safari browser needs to be in the body */
 body {
 	scroll-snap-type: y mandatory;
 
@@ -29,20 +33,6 @@ body {
 	width: 100%;
 	max-width: 1440px;
 	height: 100vh;
-}
 
-.main-section {
-	background-color: #121212;
-}
-
-.about-section {
-	background-color: #404040;
-}
-
-.works-section {
-	background-color: gray;
-}
-
-.contact-section {
-	background-color: #505050;
+	background-color: #212121;
 }
